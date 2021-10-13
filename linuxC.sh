@@ -3,14 +3,10 @@ sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-
 
 sudo apt install git
 
-git clone https://github.com/daniruiz/flat-remix
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
 
-git clone https://github.com/daniruiz/flat-remix-gtk
+echo -e "\n. $HOME/.asdf/asdf.sh" >> ~/.bashrc
 
-mkdir -p ~/.icons && mkdir -p ~/.themes
-
-cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~/.themes/
-
+echo -e "\n. $HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
 sudo apt-get install gnome-tweak-tool
 
-rm -rf flat-remix flat-remix-gtk 
