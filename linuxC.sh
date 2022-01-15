@@ -10,3 +10,4 @@ echo -e "\n. $HOME/.asdf/asdf.sh" >> ~/.bashrc
 echo -e "\n. $HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
 sudo apt-get install gnome-tweak-tool
 
+sudo sed -i 's/modifier_map Mod3/\/\/ modifier_map Mod3/g' /usr/share/X11/xkb/symbols/br
